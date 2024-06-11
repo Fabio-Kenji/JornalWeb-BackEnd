@@ -1,0 +1,408 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #294c71;
+    padding: 20px;
+}
+
+header #headerLogin {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    right: 50px;
+}
+
+nav {
+    background-color: #294c71;
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+#dropdown {
+    position: absolute;
+    display: inline-block;
+    right: 50px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.brasil {
+    background-color: #297129;
+}
+
+.internacional {
+    background-color: #712929;
+}
+
+.entretenimento {
+    background-color: #ff6700;
+}
+
+.esportes {
+    background-color: #e4b826;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+.carousel {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carousel a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+}
+
+.carousel a:hover {
+    text-decoration: underline;
+}
+
+.carousel a h3 {
+    font-size: xx-large;
+}
+
+#main-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.noticia {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.noticia h1 {
+    font-weight: bold;
+}
+
+.noticia p {
+    font-size: 18px;
+}
+
+.noticia img {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.card img {
+    height: 300px;
+}
+
+#sobreNos {
+    display: flex;
+    background-color: #294c71;
+    padding: 20px;
+    margin: auto;
+}
+
+#logoSobreNos {
+    background-color: #294c71;
+    width: 100%;
+    max-width: 815px;
+    margin: auto;
+}
+
+.sobreNos {
+    min-width: 300px;
+    max-width: 815px;
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.sobreNos h1 {
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+}
+
+#bodyEditaConta {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#mainEditaConta {
+    display: flex;
+    flex: 1;
+}
+
+#bodyConta {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#mainConta {
+    display: flex;
+    flex: 1;
+}
+
+.editaConta {
+    min-width: 300px;
+    max-width: 815px;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.301);
+}
+
+.editaConta h1 {
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.editaConta p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 30px 0px;
+}
+
+.editaConta input, [type=email], [type=text], [type=password] {
+    width: 300px;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+.editaConta .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.editaConta .container div a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.editaConta .botaoSalvar {
+    padding: 15px 25px;
+    border: none;
+    background-color: lightslategray;
+    border-radius: 5px;
+    color: white;
+    font: bold 15px arial, sans-serif;
+    cursor: pointer;
+}
+
+.editaConta .botaoVoltar {
+    padding: 15px 25px;
+    border: none;
+    background-color: lightslategray;
+    border-radius: 5px;
+    color: white;
+    font: bold 15px arial, sans-serif;
+}
+
+.editaConta .botaoDeletar {
+    padding: 15px;
+    background-color: lightcoral;
+    border-radius: 5px;
+}
+
+.conta {
+    min-width: 300px;
+    max-width: 815px;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.301);
+}
+
+.conta h1 {
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.conta p {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 30px 0px;
+}
+
+.conta .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.conta .container div a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.conta .botao {
+    padding: 15px;
+    background-color: lightslategray;
+    border-radius: 5px;
+}
+
+.conta .botaoSair {
+    padding: 15px 25px;
+    background-color: lightcoral;
+    border-radius: 5px;
+}
+
+#bodyLogin {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#mainLogin {
+    display: flex;
+    flex: 1;
+}
+
+.login {
+    margin: auto;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.login p {
+    margin: 20px 0px 3px 10px;
+    display: block;
+    font-size: large;
+}
+
+.login input {
+    width: 450px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.login .button {
+    margin: 10px;
+    padding: 5px 10px;
+    width: 474px;
+}
+
+#bodyCadastro {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#mainCadastro {
+    display: flex;
+    flex: 1;
+}
+
+.cadastro {
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cadastro h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.cadastro p {
+    margin: 20px 0px 3px 10px;
+    display: block;
+    font-size: large;
+}
+
+.cadastro input {
+    width: 450px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.cadastro .button {
+    margin: 10px;
+    padding: 5px 10px;
+    width: 474px;
+}
+
+#bodyOndeEstamos {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#mainOndeEstamos {
+    display: flex;
+    flex: 1;
+}
+
+#campo-mapa h1 {
+    margin: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#campo-mapa {
+    margin: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #294c71;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0px;
+}

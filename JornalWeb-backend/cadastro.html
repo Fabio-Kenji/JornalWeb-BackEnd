@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal Web</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="bodyCadastro">
+    <header>
+        <a href="index.php"><img src="assets/image/logo.png" alt="Logo Jornal Web"></a>
+    </header>
+
+    <!-- Início do conteúdo -->
+
+    <main id="mainCadastro">
+        <form class="cadastro" action="recebeDados.php" method="post">
+            <h1>Cadastro</h2>
+                <p>Nome</p>
+                <input type="text" placeholder="Digite seu nome" name="fNome" maxlength="80" required>
+                <p>Email</p>
+                <input type="email" placeholder="Digite seu email" name="fEmail" maxlength="80" required>
+                <p>Senha</p>
+                <input type="password" placeholder="Digite sua senha" id="senha" name="fSenha" required>
+                <p>Confirme a sua senha</p>
+                <input type="password" placeholder="Digite sua senha novamente" id="confirmaSenha" required>
+                <input type="submit" value="Enviar" class="button">
+                <p>Já possui uma conta? <a href="login.html">Faça o login aqui!</a></p>
+        </form>
+    </main>
+
+    <!-- Fim do conteúdo -->
+
+    <!-- roda pé -->
+
+    <footer>
+        <p>&copy; Copyright 2000-2024 JornalWeb</p>
+    </footer>
+</body>
+
+    <script>
+        var senha = document.getElementById("senha");
+        var confirmaSenha = document.getElementById("confirmaSenha");
+
+        function validaSenha() {
+            if(senha.value != confirmaSenha.value) {
+                confirmaSenha.setCustomValidity("Senhas diferentes");
+            } else {
+                confirmaSenha.setCustomValidity("");
+            }
+        }
+
+        senha.onchange = validaSenha;
+        confirmaSenha.onkeyup = validaSenha;
+
+    </script>
+
+</html>
